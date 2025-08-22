@@ -1,2 +1,2 @@
 # 100DaysofCode-UPES
-Progrsmming in C
+Programming in C
