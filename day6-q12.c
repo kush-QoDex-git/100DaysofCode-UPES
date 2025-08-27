@@ -24,7 +24,7 @@ Positive
 int main()
 {
     int num;
-    printf("Enter a number to check whether it is an even or odd: ");
+    printf("Enter a number to check whether it is positive or negative: ");
     scanf("%d", &num);
     if (num < 0)
     {
@@ -40,4 +40,5 @@ int main()
     }
 
     return 0;
+
 }
