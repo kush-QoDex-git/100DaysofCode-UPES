@@ -62,10 +62,24 @@ void rm_spaces_newlines(char *str)
         }
     }
 }
+void to_UpperCase(char *str)
+{
+    int i = 0;
+    while (str[i] != '\0')
+    {
+        if (((int)str[i] > 96) && ((int)str[i] < 123))
+        {
+            str[i] = (char)((int)str[i] - 32);
+        }
+        i++;
+    }
+}
 int are_Anagrams(char *str1, char *str2)
 {
     rm_spaces_newlines(str1);
     rm_spaces_newlines(str2);
+    to_UpperCase(str1);
+    to_UpperCase(str2);
     int len1 = str_len(str1), len2 = str_len(str2);
     if (len1 != len2)
     {
